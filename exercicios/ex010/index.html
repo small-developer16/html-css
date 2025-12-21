@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/doguanabara/foto-p.png" type="image/png">
+        <source srcset="Imagens/doguanabara/foto-m.png" media="(max-width: 1050px)" type="image/png">
+        <source srcset="Imagens/doguanabara/foto-g.png"  type="image/png">
+        <img src="Imagens/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h1>Hospedado no SoundCloud</h1>
+    <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2216758121&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/accountforstudies"  target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/accountforstudies/good-for-the-ghost-alge" title="good for the ghost - Alge" target="_blank" style="color: #cccccc; text-decoration: none;">good for the ghost - Alge</a></div>
+    <h1>Hospedado localmente</h1>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="Áudios/guanacast-33.mp3" type="audio/mpeg">
+        <source src="Áudios/happy-mistake.mp3" type="audio/mpeg"> Seu navegador não suportou o formato do áudio original
+        <p>Seu navegador não suporta os formatos de áudio disponíveis</p>
+        <a href="Áudios/guanacast-33.mp3"  type="audio/mpeg">Clique aqui para baixá-lo</a><        
+    </audio>
+</body>
+</html>
