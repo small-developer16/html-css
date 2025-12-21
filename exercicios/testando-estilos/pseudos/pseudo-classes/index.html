@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        .escondido{
+            color: white;
+        }
+        .escondido:hover{
+            color: blue;
+        }
+        #marcado:visited{
+            color: darkgoldenrod;
+        }
+        #marcado:hover{
+            text-decoration: underline;
+        }
+        #clicado:active{
+            color: lime;
+            text-decoration: underline;
+        }
+         #marcado, #clicado{
+            text-decoration: none;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando as Pseudo-classes</h1>
+    <h2>Usando o :hover</h1>
+    <p>Abaixo jaz um texto em azul que só aparece quando você coloca o mouse por cima</p>
+    <p><span class="escondido">Lorem, ipsum.</span>&larr;</p>
+    <h2>Usando o :visited</h2>
+    <a id="marcado" href="https://youtube.com/cursoemvideo" target="_blank" rel="external">Link para o canal Curso em vídeo</a>
+    <p>O link acima é vermelho escuro, fica marcado em dourado quando você o visita e é sublinhado quando o mouse está por cima.</p>
+    <h2>Usando o :active</h2>
+    <a id="clicado" rel="external" target="_blank" href="https://youtube.com/coisadenerd">Link para o canal Coisa de Nerd</a>
+    <p>o link acima fica verde limão e sublinhado ao clicar sobre ele</p>    
+</body>
+</html>

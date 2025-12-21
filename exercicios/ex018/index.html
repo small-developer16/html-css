@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+        @font-face {
+            font-family: 'Minha Fonte' ;
+             src: url(/fonts/littlebird.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        @font-face{
+            font-family: 'Foobar';
+            src: url(foobar.otf) format('opentype');
+            font-weight: 900;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Fontes de CSS</h1>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;">Podemos configurar fontes padrão do sistema</p>
+    <!-- Essa é uma fonte padrão -->
+    <p style="font-family: Science Gothic; font-size: 30px;">Ou então usar uma fonte do Google Fonts</p>
+    <!-- Essa foi importada na linha 8 -->
+    <p style="font-family: 'Foobar'; font-size: 30px; ">Ou ainda usar um arquivo local de fontes</p>
+    <!-- Essa foi importada logo abaixo, da linha 9 à 11 -->
+</body>
+</html> 

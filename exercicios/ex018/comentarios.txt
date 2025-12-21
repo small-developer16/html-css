@@ -1,0 +1,12 @@
+Linhas: 8 à 11
+ /*O format() foi usado nesse caso para indicar o formato daquela fonte .ttf ao navegador  */
+/*  Tipos de format()
+                -opentype (otf)
+                -truetype (ttf)
+                -embedded-opentype
+                -truetype-aat (Apple Advanced Typography)
+                -svg
+                */
+                /* Obs: Mais de um formato de fonte pode ser acrescentado ao src */
+
+            /* A regra "font-face" é usada para adicionar uma fonte externa (porém, local) ao documento HTML. font-family é usada, nesse caso, para nomear aquela fonte, enquanto src: url() indica a origem daqual fonte, sua localização. */

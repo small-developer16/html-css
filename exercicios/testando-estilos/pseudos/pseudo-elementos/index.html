@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a.link:hover{
+            text-decoration: underline;
+        }
+       
+        #github{
+            color: rgb(107, 0, 0);
+        }
+        #w3c{
+            color: rgb(255, 15, 15);
+            font-weight: bolder;
+        }
+        #curso-em-video{
+            color: white;
+            background-color: black;
+        }
+        #curso-em-video::after{
+        content: ">";
+        }
+        #curso-em-video::before{
+            content: "<";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>Para aprender HTML5 e CSS3, acesse o <a id="github" class="link" href="https://github.com/gustavoguanabara/html-css" rel="next" target="_self">GitHub do Guanabara</a></p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do <a id="w3c" class="link"  target="_blank" href="https://w3c.br/padroes/">Escritório do W3C no Brasil</a></p>
+    <p>Para acompanhar os cursos, acesse o <a id="curso-em-video" class="link" href="https://youtube.com/cursoemvideo">canal do Curso em Vídeo</a></p>
+</body>
+</html>
