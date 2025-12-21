@@ -69,6 +69,7 @@ ul.menu a:hover{
     color: #1B5936;
 }
 main{
+    min-width: 260px;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
@@ -78,10 +79,11 @@ main{
     box-shadow: 0.5px 1px 8px 1px rgba(0, 0, 0, 0.479);
 }
 article{
-    min-width: 360px;
+    min-width: 240px;
     max-width: 980px;
 }
 h1#do-article{
+    text-align: left;
     font-family: 'Idroid';
     color:#1B5936;
     font-size: 1.8em;
@@ -92,6 +94,7 @@ b{
     color: #1e5e3a;
 }
 h2.do-artigo{
+    text-align: left;
     font-family: 'Idroid';
     color: #1B5936;
     background-image: linear-gradient(to right, #c2f6d7, #d4f5e2, #e5faf3d8, rgb(244, 254, 241) ) ;
@@ -188,7 +191,7 @@ footer{
     margin: 16px 0px 0px 0px;
     text-align: center;
     background-color: #1B5936;
-    height: 30px;
+    min-height: 30px;
    
 }
  a.autor{
