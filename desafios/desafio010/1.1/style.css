@@ -16,7 +16,7 @@ body{
     background-color:#84e1ad ;
 }
 
-section{
+div.cabecalho{
     background-image: linear-gradient(to bottom,#58d684,#54d682,#44ae69,#2A8C4C,#1B5936);
     min-height: 150px;
     padding-top: 30px;
@@ -154,7 +154,7 @@ aside > div{
     background-color: #2A8C4C;
     color: white;
 }
- aside span{
+ aside h3{
     display: inline-block;
     margin: 10px;
 }
