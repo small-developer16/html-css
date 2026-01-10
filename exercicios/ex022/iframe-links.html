@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        ul{
+            text-align: center;
+            margin: auto;
+        }
+        li{
+            margin: 0px 10px;
+            display: inline-block;
+        }
+        iframe{
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça um escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia esse saepe enim sit eius nihil dignissimos quidem aliquid voluptatem odit, eveniet hic, pariatur, error ipsam maxime accusantium accusamus magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae modi fuga, quis cum voluptates in corrupti quibusdam atque omnis assumenda magnam ab ratione sit at, voluptatum debitis cupiditate. Perspiciatis, quae?</p>
+    <ul>
+        <li><a href="paginas-extras/tabela.html" target="paginas">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag-exemplo.html" target="paginas">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag-exemplo2.html" target="paginas">Terceira Página</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi atque voluptate repellendus officiis tenetur. Magnam, eos cupiditate praesentium, dolores expedita reiciendis repudiandae, totam error fugiat impedit corrupti quasi rerum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit accusamus temporibus. Dolorum error laudantium odit repellat nihil saepe omnis eaque iure, repudiandae repellendus perferendis. Accusamus reiciendis enim architecto quibusdam.</p>
+    <iframe srcdoc="<h1>Página Padrão</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores placeat magnam amet, labore quia odio minima sit nam, vel iure, sed reprehenderit maiores aut quae nulla. Sit perferendis quod voluptas.</p>" name="paginas">Infelizmente seu navegador não é compatível com iframes</iframe>
+</body>
+</html>
