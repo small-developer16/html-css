@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Social</title>
+    <style>
+        body{
+            background-image: url(imagens/fundo-madeira.jpg);
+        }
+        main{
+            
+            border: 3px solid black;
+        }
+        /*div#mae{
+            width: 50%;
+            height: 624px;
+            display: inline-block;
+            border: 2px solid brown;
+        }*/
+        div#iphone{
+            min-width: 156px;
+            max-width: 312px;
+            min-height: 312px;
+            max-height: 624px;
+            border: 3px solid orange;
+            background-image: url(imagens/frame-iphone.png);
+           background-size: 100% 105%;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+        iframe{
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            height: 50%;
+            top: 20px;
+            right: 0;
+            left: 7%;
+            background-image: url(imagens/tela-home.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        div#container-logos{
+           margin-left: 80px;
+            position: relative;
+            border: 3px solid red;
+            display: inline-block;
+        }
+        img.logo{
+            width: 45px;
+            display: block;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="mae">
+            <div id="iphone">
+                <iframe src="" name="tela-iphone"></iframe>
+            </div>
+        </div>
+    <!--<main>!-->
+        
+        <div id="container-logos">
+            <a href="#" target="">
+                <img class="logo" src="imagens/logo-home.jpg" alt="">
+            </a>
+            <a href="#" target="tela-iphone">
+                <img class="logo" src="imagens/logo-youtube.jpg" alt="">
+            </a>
+            <a href="#" target="tela-iphone">
+                <img  class="logo" src="imagens/logo-instagram.jpg" alt="">
+            </a>
+            <a href="#" target="tela-iphone">
+                <img class="logo" src="imagens/logo-facebook.jpg" alt="">
+            </a>
+            <a href="#" target="tela-iphone">
+                <img class="logo" src="imagens/logo-twitter.jpg" alt="">
+            </a>
+            <a href="#" target="tela-iphone">
+                <img class="logo" src="imagens/logo-github.jpg" alt="">
+            </a>
+        </div>
+    <!--</main>!-->
+</body>
+</html>

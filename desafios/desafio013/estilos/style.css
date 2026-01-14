@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+ html{
+    scrollbar-width: none;
+ }
+ body{    
+            margin: 0px;
+            width: 100vw;
+            height: 3200px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        div#filha{
+            position: relative;
+            top: 100%;
+            width: 100%;
+            background-color: rgb(225, 5, 5);
+           text-align: center;
+        }
+        p{
+            color: white;
+            font-size: 3em;
+        }
+        a{
+            text-decoration: none;
+        }
