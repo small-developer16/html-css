@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas de e-mail e telefone</title>
+    <style>
+        div{
+            margin: 10px
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados Roubáveis (seu trouxa)</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" maxlength="30" minlength="8" required autocomplete="name">
+            </div>
+            <div>
+                <label for="iemail">
+                    E-mail:
+                </label>
+                <input type="email" autocomplete="email" id="iemail" name="email" maxlength="256" size="25" required  placeholder="Seu E-mail">
+            </div>
+            <div>
+                <label for="itelefone">
+                    Telefone:
+                </label>
+                <input type="tel" id="itelefone" name="telefone" pattern="^\(\d{2})\d{4,5}-\d{4}" size="13" maxlength="15" minlength="11" placeholder="Ex: (94)99235-6736" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

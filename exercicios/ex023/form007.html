@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, datalist e textarea</title>
+    <style>
+        div{
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="est">
+                Estado
+                <select name="est" id="est">
+                    <option value="" selected>--Escolha--</option>
+                    <optgroup label="Região Norte">
+                        <option value="AC">
+                            Acre
+                        </option>
+                        <option value="PA">
+                            Pará
+                        </option>
+                        <option value="TO">
+                            Tocantins
+                        </option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="ES" >
+                            Espírito Santo
+                        </option>
+                        <option value="SP">
+                            São Paulo
+                        </option>
+                        <option value="RJ">
+                            Rio de Janeiro
+                        </option>
+                    </optgroup>
+
+                </select>
+            </label>
+
+        </div>
+        <div>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="profissoes">
+            <datalist id="profissoes">
+                <option value="Administrador">Administrador</option>
+                <option value="Contabilista">Contabilista</option>
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Professor">Professor</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="msg">
+                Mensagem:
+                <textarea placeholder="Sua Mensagem..." name="msg" id="msg" cols="25" rows="10"></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
