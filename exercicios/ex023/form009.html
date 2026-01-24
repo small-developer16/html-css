@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário: Js no range</title>
+    <style>
+        div{
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="num">Número:</label>
+            <input type="range" id="num" min="0" max="10" value="5" oninput="val.innerHTML = Number(num.value)">
+            <output id="val">5</output>
+        </div>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
